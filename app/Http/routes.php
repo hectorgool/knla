@@ -11,6 +11,18 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+
+/*
+Route::get('/', function() {
+	return 'All cats';
+});
+
+Route::get('cats/{id}', function($id) {
+	return sprintf('Cat #%s', $id);
+});
+*/
