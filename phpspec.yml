@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Knla
+        psr4_prefix: Knla
+        src_path: app
