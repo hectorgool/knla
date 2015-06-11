@@ -15,8 +15,8 @@
     });   
 
 
-    $routeProvider.when('/signup', {
-      templateUrl: 'partials/view2.html'//,
+    $routeProvider.when('/admin', {
+      templateUrl: '/assets/partials/admin.html'//,
       //controller: 'PostCtrl'
     });
     
