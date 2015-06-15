@@ -83,14 +83,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <script src="{!! URL::asset('assets/js/angular.min.js'); !!}"></script>
-    <script src="{!! URL::asset('assets/js/angular-route.min.js'); !!}"></script>
-    <script src="{!! URL::asset('assets/js/angular-resource.min.js'); !!}"></script>
+    <script src="{!! URL::asset('assets/lib/angular.min.js'); !!}"></script>
+    <script src="{!! URL::asset('assets/lib/angular-route.min.js'); !!}"></script>
+    <script src="{!! URL::asset('assets/lib/angular-resource.min.js'); !!}"></script>
 
     <script src="{!! URL::asset('assets/js/santo.js'); !!}"></script>
     <script src="{!! URL::asset('assets/js/app.js'); !!}"></script>
-    <script src="{!! URL::asset('assets/js/controller.js'); !!}"></script>
-    <script src="{!! URL::asset('assets/js/service.js'); !!}"></script>
+    <script src="{!! URL::asset('assets/js/EquiposController.js'); !!}"></script>
+    <script src="{!! URL::asset('assets/js/EquiposService.js'); !!}"></script>
 
   </body>
 </html>

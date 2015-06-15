@@ -11,7 +11,7 @@
 
     $routeProvider.when('/', {
       templateUrl: '/assets/partials/view1.html',
-      controller: 'PostsCtrl'
+      //controller: 'PostsCtrl'
     });   
 
 
@@ -20,6 +20,10 @@
       //controller: 'PostCtrl'
     });
     
+    $routeProvider.when('/equipos', {
+      templateUrl: '/assets/partials/equipos.html',
+      controller: 'EquiposController'
+    });  
 
     $routeProvider.otherwise({
       templateUrl:'partials/404.html'

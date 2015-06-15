@@ -1,5 +1,8 @@
 <?php
 
+//php artisan db:seed
+//php artisan migrate:refresh --seed
+
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call('UserTableSeeder');
+        $this->call('EquiposTableSeeder');
 
         Model::reguard();
     }

@@ -1,9 +1,23 @@
-<div class="col-md-6 col-md-offset-3">
 
 
-asdfasdf
-	<p ng-repeat="post in posts">
-		<span>{{post.nm}}</span>
-	</p>
 
-</div>
+
+php artisan make:migration create_equipos_table --create=equipos
+
+#ejecutar las migraciones
+php artisan migrate
+
+#volver a ejecuar las migraciones
+php artisan migrate:reset
+
+#crear una estructura seeder para despues llenarla
+php artisan make:seeder EquiposTableSeeder
+
+#para llenar las tablas con los registros del seeder
+php artisan migrate:refresh --seed
+
+
+php artisan make:model Equipos
+
+
+php artisan --version

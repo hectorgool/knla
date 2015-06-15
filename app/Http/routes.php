@@ -16,6 +16,7 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::resource('equipos','EquiposController');
 
 /*
 Route::get('/', function() {
