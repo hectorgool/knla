@@ -4,7 +4,7 @@
 namespace Knla\Http\Controllers;
 
 
-use App\Equipos;
+use Knla\Equipos;
 use Illuminate\Http\Request;
 use Knla\Http\Requests;
 use Knla\Http\Controllers\Controller;
@@ -18,7 +18,7 @@ class EquiposController extends Controller{
      */
     public function index(){
 
-        $equipos = App\Equipos::all();
+        $equipos = Equipos::all();
         return $equipos->toArray();
 
     }

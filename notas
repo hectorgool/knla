@@ -21,3 +21,12 @@ php artisan make:model Equipos
 
 
 php artisan --version
+
+No supported encrypter found. The cipher and / or key length are invalid. 
+php artisan key:generate :)
+
+	<pre>
+
+		{{ documentos | json }}
+
+	</pre>

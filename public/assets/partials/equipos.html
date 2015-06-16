@@ -8,10 +8,22 @@
 
 	<div class="table-responsive">
   		<table class="table table-bordered table-striped">
+
+  			<tr ng-repeat="doc in documentos">
+
+  				<td>
+  					{{ doc.id }}
+  				</td>		
     
+    			<td>
+    				{{ doc.nombre }}
+    			</td>		
+
+    		<tr>
 
   		</table>
 	</div>
+
 
 
 </div>
