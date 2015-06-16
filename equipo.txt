@@ -1,0 +1,32 @@
+1	Arizona
+2	Atlanta
+3	Baltimore
+4	Buffalo
+5	Carolina
+6	Chicago
+7	Cincinnati
+8	Cleveland
+9	Dallas
+10	Denver
+11	Detroit
+12	Green Bay
+13	Houston
+14	Indianapolis
+15	Jacksonville
+16	Kansas City
+17	Miami
+18	Minnesota
+19	N.Y. Giants
+20	N.Y. Jets
+21	New England
+22	New Orleans
+23	Oakland
+24	Philadelphia
+25	Pittsburgh
+26	San Diego
+27	San Francisco
+28	Seattle
+29	St. Louis
+30	Tampa Bay
+31	Tennessee
+32	Washington	
