@@ -4,7 +4,12 @@
 
   var app, dependencies;
 
-  dependencies = ['ngResource', 'ngRoute','myApp.services','myApp.controllers'];
+  dependencies = ['ngResource', 'ngRoute',
+    'myApp.services','myApp.controllers',
+    'User.controllers','User.services',
+    'ui.bootstrap'
+  ];
+
   app = angular.module('myApp', dependencies);
   
   app.config( function( $routeProvider ){   
@@ -24,6 +29,16 @@
       templateUrl: '/assets/partials/equipos.html',
       controller: 'EquiposController'
     });  
+
+    $routeProvider.when('/registro', {
+      templateUrl: '/assets/partials/registro.html',
+      controller: 'UserController'
+    });
+
+    $routeProvider.when('/usuarios', {
+      templateUrl: '/assets/partials/users.html',
+      controller: 'UserController'
+    });
 
     $routeProvider.otherwise({
       templateUrl:'partials/404.html'
