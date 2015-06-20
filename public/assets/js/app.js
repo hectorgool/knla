@@ -25,6 +25,16 @@
       controller: 'EquiposController'
     });  
 
+    $routeProvider.when('/partidos', {
+      templateUrl: '/assets/partials/partidos.html',
+      controller: 'EquiposController'
+    }); 
+
+    $routeProvider.when('/quiniela', {
+      templateUrl: '/assets/partials/quiniela.html'//,
+      //controller: 'EquiposController'
+    }); 
+
     $routeProvider.otherwise({
       templateUrl:'partials/404.html'
     });
