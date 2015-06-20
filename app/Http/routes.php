@@ -18,6 +18,8 @@ Route::get('/', function () {
 
 Route::resource('equipos','EquiposController');
 
+Route::resource('user','UserController');
+
 /*
 Route::get('/', function() {
 	return 'All cats';
