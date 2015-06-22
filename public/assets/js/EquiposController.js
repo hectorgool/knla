@@ -9,11 +9,11 @@
 
     function ($scope, EquiposFactory) {
 
-      $scope.documentos = null;
+      $scope.equipos = null;
 
       EquiposFactory.query( function( jsonArray ){
         console.log( jsonArray );
-        $scope.documentos = jsonArray;
+        $scope.equipos = jsonArray;
       });   
       
     }

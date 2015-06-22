@@ -1,0 +1,126 @@
+
+
+
+<div class="container-fluid">
+
+	<h1>
+		Quiniela
+	</h1>
+
+  <h3>
+    Semana:
+  </h3>  
+
+  
+  <div class="panel panel-default">
+    <div class="panel-body">
+
+      <div ng-controller="SemanasController">
+
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+
+          <div class="btn-group" role="group" ng-repeat="s in semanas">
+            <button type="button" class="btn btn-default">{{ s.id }}</button>
+          </div>
+
+        </div>
+      </div>  
+
+    </div>
+  </div>
+  
+
+
+    <!--
+    PARA DEPURAR
+    <div ng-controller="EquiposController">
+       <select ng-model="equipo"
+          ng-options="e.nombre for e in equipos track by e.id">
+       </select>
+      <pre>{{equipo | json}}</pre>
+    </div>
+    -->
+
+  <div ng-controller="EquiposController">
+  <div ng-controller="SemanasController">
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        Semana:
+        <select ng-model="semana"
+          ng-options="s.nombre for s in semanas track by s.id">
+        </select>
+
+        Equipo Local:
+        <select ng-model="equipo_local"
+          ng-options="e.nombre for e in equipos track by e.id">
+        </select>
+
+        Equipo Visitante:
+        <select ng-model="equipo_visitante"
+            ng-options="e.nombre for e in equipos track by e.id">
+        </select>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block">Guardar</button>
+
+      </div>
+    </div>
+
+  	<div class="table-responsive">
+    		<table class="table table-bordered table-striped">
+
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Semana</th>
+              <th>Visitante</th>
+              <th>Local</th>
+              <th>Hora</th>
+            </tr>
+          </thead>
+
+          <tbody>
+      			<tr>
+
+              <td>
+                id
+              </td>
+
+              <td>
+                {{ semana.nombre }}
+              </td>    	
+        
+        			<td>
+        				{{ equipo_local.nombre }}
+        			</td>		
+
+        			<td>
+        				{{ equipo_visitante.nombre }}
+        			</td>
+
+              <td>
+                hora
+              </td> 
+
+        		<tr>
+          <tbody>
+
+          <tfoot>
+            <tr>
+              <th>#</th>
+              <th>Semana</th>
+              <th>Visitante</th>
+              <th>Local</th>
+              <th>Hora</th>
+            </tr>
+          </tfoot>
+
+
+    		</table>
+  	</div>
+  </div>  
+  </div>
+
+
+</div>

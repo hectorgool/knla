@@ -7,7 +7,7 @@
   dependencies = ['ngResource', 'ngRoute',
     'myApp.services','myApp.controllers',
     'User.controllers','User.services',
-    'ui.bootstrap'
+    'Semanas.controllers', 'Semanas.services'
   ];
 
   app = angular.module('myApp', dependencies);
@@ -39,12 +39,17 @@
       //controller: 'EquiposController'
     }); 
 
+    $routeProvider.when('/quiniela-crear', {
+      templateUrl: '/assets/partials/quiniela-crear.html'//,
+      //controller: 'EquiposController'
+    });
+
     $routeProvider.when('/registro', {
       templateUrl: '/assets/partials/registro.html',
       controller: 'UserController'
     });
 
-    $routeProvider.when('/usuarios', {
+    $routeProvider.when('/jugadores', {
       templateUrl: '/assets/partials/users.html',
       controller: 'UserController'
     });

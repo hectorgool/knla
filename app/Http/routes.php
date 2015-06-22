@@ -17,6 +17,8 @@ Route::get('/', function () {
 });
 
 Route::resource('equipos','EquiposController');
+Route::resource('semanas', 'SemanasController');
+Route::resource('partidos', 'PartidosController');
 
 Route::resource('user','UserController');
 
